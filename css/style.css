@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
+    width: 100%;
+    background-color: #fff;
+}
+aside {
+    min-height: 100vh;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #C2185B;
+}
+
+.btn-primary{
+    background-color: #C2185B;
+    border-color: #C2185B;
+}
+
+main.login {
+    width: 400px;
+}
+
+section.full{
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px 0;
+}
+
+article.evento {
+    width: 350px;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li  {
+    padding: 10px;
+}
+
+.botao-e-mensagem {
+    display: flex;
+}
+
+#check {
+    display: none;
+}
+
+#icone {
+    display: none;
+}
+
+.banner-celular {
+    display: none;
+}
+
+.banner-dektop {
+    height: 758px;
+    width: 100%;
+
+}
+
+@media(max-width: 840px) {
+    
+    .container.d-flex.justify-content-center.align-items-center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .col h2{
+        font-size: 30px;
+    }
+
+    .container .col{
+        font-size: 22px;
+    }
+
+    .container .img{
+        display: none;
+    }
+
+    .fs-4.px-5 {
+        display: none;
+    }
+
+    #icone {
+        display: block;
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .d-flex.flex-column.flex-shrink-0.p-3.bg-light.col-2 {
+        transform: translateX(-300px);
+        width: 20%;
+        padding-top: 5%!important;
+    }
+    
+    #check:checked ~ .d-flex.flex-column.flex-shrink-0.p-3.bg-light.col-2{
+        transform: translateX(0px);
+        transition: all 0.3s;
+    }
+
+    .banner-dektop {
+        display: none;
+    }
+
+    .banner-celular {
+        display: block;
+        height: 780px;
+    }
+    
+}
+
+@media(max-width: 440px) {
+
+    .container .col {
+        padding: 10%;
+    }
+
+    .container .img{
+        display: none;
+    }
+    
+    .d-flex.flex-column.flex-shrink-0.p-3.bg-light.col-2 {
+        transform: translateX(-300px);
+        width: 20%;
+        padding-top: 5%!important;
+    }
+    
+    #check:checked ~ .d-flex.flex-column.flex-shrink-0.p-3.bg-light.col-2{
+        transform: translateX(0px);
+        transition: all 0.3s;
+    }
+
+    .row {
+        width: 650px;
+    }
+
+    .table {
+        overflow-x: scroll;
+    }
+
+    .banner-dektop {
+        display: none;
+    }
+
+    .banner-celular {
+        display: block;
+    }
+
+}
+
